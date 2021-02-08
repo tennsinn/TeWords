@@ -4,7 +4,13 @@
 
 ## Instructions
 
-直接使用模板样式输出碎语分页`Words_Plugin::render()`
+### 模板输出
+
+在php页面中使用`Words_Plugin::render()`可直接调用预设模板样式输出碎语分页
+
+*预设：* 复制template目录下的words.php到当前使用的主题目录下，后台**独立页面**新建页面自定义模板选择**心情碎语**
+
+### 方法介绍
 
 单独获取碎语内容`$words = Typecho_Widget::widget('Words_Action')->getWords()`（默认参数 $type='page', $pageSize=10）
 > $type 获取模式
